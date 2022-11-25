@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const FooterCTA = () => {
   return (
-    <div className="bg-amber-100 w-full">
+    <div className="w-full">
       <div className="content-container flex flex-col-reverse gap-y-8 small:flex-row small:items-center justify-between py-16 relative">
         <div>
           <h3 className="text-2xl-semi">Shop the latest styles</h3>
@@ -18,7 +18,7 @@ const FooterCTA = () => {
             alt=""
             layout="fill"
             objectFit="cover"
-            className="absolute inset-0"
+            className="rounded-lg absolute inset-0"
           />
         </div>
       </div>
