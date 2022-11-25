@@ -21,7 +21,7 @@ const Hero = () => {
         priority={true}
         quality={90}
         objectFit="cover"
-        alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
+        alt="Photo by @katsiajazwinska https://unsplash.com/@katsiajazwinska"
         className="absolute inset-0"
         draggable="false"
       />
