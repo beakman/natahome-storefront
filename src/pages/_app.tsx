@@ -7,6 +7,7 @@ import { CartProvider, MedusaProvider } from "medusa-react"
 import { Hydrate } from "react-query"
 import "styles/globals.css"
 import { AppPropsWithLayout } from "types/global"
+import PlausibleProvider from "next-plausible"
 
 function App({
   Component,
@@ -15,26 +16,32 @@ function App({
   const getLayout = Component.getLayout ?? ((page) => page)
 
   return (
-    <MedusaProvider
-      baseUrl={MEDUSA_BACKEND_URL}
-      queryClientProviderProps={{
-        client: queryClient,
-      }}
+    <PlausibleProvider
+      domain="natahome.com"
+      customDomain="https://analytics.psalido.net"
+      selfHosted
     >
-      <Hydrate state={pageProps.dehydratedState}>
-        <CartDropdownProvider>
-          <MobileMenuProvider>
-            <CartProvider>
-              <StoreProvider>
-                <AccountProvider>
-                  {getLayout(<Component {...pageProps} />)}
-                </AccountProvider>
-              </StoreProvider>
-            </CartProvider>
-          </MobileMenuProvider>
-        </CartDropdownProvider>
-      </Hydrate>
-    </MedusaProvider>
+      <MedusaProvider
+        baseUrl={MEDUSA_BACKEND_URL}
+        queryClientProviderProps={{
+          client: queryClient,
+        }}
+      >
+        <Hydrate state={pageProps.dehydratedState}>
+          <CartDropdownProvider>
+            <MobileMenuProvider>
+              <CartProvider>
+                <StoreProvider>
+                  <AccountProvider>
+                    {getLayout(<Component {...pageProps} />)}
+                  </AccountProvider>
+                </StoreProvider>
+              </CartProvider>
+            </MobileMenuProvider>
+          </CartDropdownProvider>
+        </Hydrate>
+      </MedusaProvider>
+    </PlausibleProvider>
   )
 }
 

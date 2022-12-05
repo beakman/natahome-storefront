@@ -19,7 +19,7 @@ const Hero = () => {
         layout="fill"
         loading="eager"
         priority={true}
-        quality={90}
+        placeholder="blur"
         objectFit="cover"
         alt="Photo by @katsiajazwinska https://unsplash.com/@katsiajazwinska"
         className="absolute inset-0"

@@ -41,6 +41,7 @@ const ImageOrPlaceholder = ({
       alt="Thumbnail"
       layout="fill"
       objectFit="cover"
+      placeholder="blur"
       objectPosition="center"
       className="absolute inset-0"
       draggable={false}

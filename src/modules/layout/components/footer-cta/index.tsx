@@ -18,6 +18,7 @@ const FooterCTA = () => {
             alt=""
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             className="rounded-lg absolute inset-0"
           />
         </div>
