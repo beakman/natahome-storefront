@@ -8,7 +8,7 @@ import PlausibleProvider from "next-plausible"
 
 const Home: NextPageWithLayout = () => {
   return (
-    <PlausibleProvider domain="natahome.com" customDomain="analytics.psalido.net" selfHosted>    
+    <PlausibleProvider domain="natahome.com" customDomain="https://analytics.psalido.net" selfHosted>    
       <Head
         title="Home"
         description="Shop all available models only at the Natahome. Worldwide Shipping. Secure Payment."
