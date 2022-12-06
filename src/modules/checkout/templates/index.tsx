@@ -14,7 +14,7 @@ const CheckoutTemplate = () => {
             <Link
               className="text-small-semi text-gray-700 flex items-center gap-x-2 uppercase flex-1 basis-0"
               href="/cart"
-            >
+              legacyBehavior>
               <ChevronDown className="rotate-90" size={16} />
               <span className="mt-px hidden small:block">
                 Back to shopping cart
@@ -36,7 +36,7 @@ const CheckoutTemplate = () => {
         </div>
       </div>
     </CheckoutProvider>
-  )
+  );
 }
 
 export default CheckoutTemplate
