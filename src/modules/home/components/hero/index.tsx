@@ -1,5 +1,5 @@
 import UnderlineLink from "@modules/common/components/underline-link"
-import Image from "next/legacy/image";
+import Image from "next/image";
 import heroImage from "../../../../../public/hero.jpg"
 
 const Hero = () => {
@@ -17,16 +17,16 @@ const Hero = () => {
       </div>
       <Image
         src={heroImage}
-        layout="fill"
         loading="eager"
         priority={true}
         placeholder="blur"
         alt="Photo by @katsiajazwinska https://unsplash.com/@katsiajazwinska"
         className="absolute inset-0"
         draggable="false"
-      />
+        fill
+        sizes="100vw" />
     </div>
-  )
+  );
 }
 
 export default Hero
