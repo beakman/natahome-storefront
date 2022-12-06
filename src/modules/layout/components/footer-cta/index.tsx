@@ -1,5 +1,5 @@
 import UnderlineLink from "@modules/common/components/underline-link"
-import Image from "next/image"
+import Image from "next/legacy/image";
 import ctaThree from "../../../../../public/cta_three.jpg"
 
 const FooterCTA = () => {
