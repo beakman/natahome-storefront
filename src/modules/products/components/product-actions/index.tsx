@@ -27,8 +27,9 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
     <div className="flex flex-col gap-y-2">
       {product.collection && (
         (<Link
-          href={`/collections/${product.collection.id}`}
-          className="text-small-regular text-gray-700">
+        href={`/collections/${product.collection.id}`}
+        className="text-small-regular text-gray-700"
+        legacyBehavior>
 
           {product.collection.title}
 

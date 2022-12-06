@@ -15,9 +15,12 @@ const AccountNav = () => {
           <Link
             className="flex items-center gap-x-2 text-small-regular py-2"
             href="/account"
-            legacyBehavior>
-            <ChevronDown className="transform rotate-90" />
+            legacyBehavior
+          >
+            <>
+              <ChevronDown className="transform rotate-90" />
               <span>Account</span>
+            </>
           </Link>
         )}
       </div>
@@ -58,7 +61,7 @@ const AccountNav = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 type AccountNavLinkProps = {

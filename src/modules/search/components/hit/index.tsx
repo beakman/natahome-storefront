@@ -25,8 +25,9 @@ const Hit = ({ hit }: HitProps) => {
         <div className="flex flex-col">
           {hit.collection_id && (
             (<Link
-              href={`/collections/${hit.collection_id}`}
-              className="text-small-regular text-gray-500">
+            href={`/collections/${hit.collection_id}`}
+            className="text-small-regular text-gray-500"
+            legacyBehavior>
 
               {hit.collection_handle}
 

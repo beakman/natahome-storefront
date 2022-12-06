@@ -119,8 +119,10 @@ const CartDropdown = () => {
                   <span>Your shopping bag is empty.</span>
                   <div>
                     <Link href="/store" legacyBehavior>
+                      <>
                       <span className="sr-only">Go to all products page</span>
                       <Button onClick={close}>Explore products</Button>
+                      </>
                     </Link>
                   </div>
                 </div>

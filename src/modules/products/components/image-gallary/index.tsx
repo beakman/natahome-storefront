@@ -56,7 +56,6 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
               <Image
                 src={image.url}
                 layout="fill"
-                objectFit="cover"
                 placeholder="blur"
                 priority={index <= 2 ? true : false}
                 className="absolute inset-0"

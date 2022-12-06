@@ -25,11 +25,13 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                 className="flex items-center justify-between py-4 border-b border-gray-200 px-8"
                 href="/account/profile"
                 legacyBehavior>
-              <div className="flex items-center gap-x-2">
+                  <>
+                  <div className="flex items-center gap-x-2">
                     <User size={16} />
                     <span>Profile</span>
                   </div>
                   <ChevronDown className="transform -rotate-90" />
+                  </>
               </Link>
             </li>
             <li>
@@ -37,11 +39,13 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                 className="flex items-center justify-between py-4 border-b border-gray-200 px-8"
                 href="/account/addresses"
                 legacyBehavior>
-              <div className="flex items-center gap-x-2">
+                  <>
+                  <div className="flex items-center gap-x-2">
                     <MapPin size={16} />
                     <span>Addresses</span>
                   </div>
                   <ChevronDown className="transform -rotate-90" />
+                  </>
               </Link>
             </li>
             <li>
@@ -49,11 +53,13 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                 className="flex items-center justify-between py-4 border-b border-gray-200 px-8"
                 href="/account/orders"
                 legacyBehavior>
-              <div className="flex items-center gap-x-2">
+                  <>
+                  <div className="flex items-center gap-x-2">
                     <Package size={16} />
                     <span>Orders</span>
                   </div>
                   <ChevronDown className="transform -rotate-90" />
+                  </>
               </Link>
             </li>
           </ul>
