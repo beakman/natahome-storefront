@@ -18,8 +18,17 @@ const Home: NextPageWithLayout = () => {
   )
 }
 
+const ComingSoon = () => {
+  return (
+    <>     
+      <h1>Natahome</h1>
+      <p>Nuestro sitio está en construcción</p>
+    </>
+  )
+}
+
 Home.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>
 }
 
-export default Home
+export default ComingSoon

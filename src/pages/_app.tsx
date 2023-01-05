@@ -33,26 +33,7 @@ function App({
       customDomain="https://analytics.psalido.net"
       selfHosted
     >
-      <MedusaProvider
-        baseUrl={MEDUSA_BACKEND_URL}
-        queryClientProviderProps={{
-          client: queryClient,
-        }}
-      >
-        <Hydrate state={pageProps.dehydratedState}>
-          <CartDropdownProvider>
-            <MobileMenuProvider>
-              <CartProvider>
-                <StoreProvider>
-                  <AccountProvider>
-                    {getLayout(<Component {...pageProps} />)}
-                  </AccountProvider>
-                </StoreProvider>
-              </CartProvider>
-            </MobileMenuProvider>
-          </CartDropdownProvider>
-        </Hydrate>
-      </MedusaProvider>
+      <Component {...pageProps} />
     </PlausibleProvider>
   )
 }
