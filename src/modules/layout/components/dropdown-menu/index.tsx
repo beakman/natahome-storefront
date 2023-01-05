@@ -29,7 +29,7 @@ const DropdownMenu = () => {
       <div className="flex items-center h-full">
         <Popover className="h-full flex">
           <>
-            <Link href="/shop" passHref className="relative flex h-full" legacyBehavior>
+            <Link href="/store" passHref className="relative flex h-full" legacyBehavior>
 
               <Popover.Button
                 className={clsx(

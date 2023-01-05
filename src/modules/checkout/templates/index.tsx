@@ -14,8 +14,9 @@ const CheckoutTemplate = () => {
             <Link
               className="text-small-semi text-gray-700 flex items-center gap-x-2 uppercase flex-1 basis-0"
               href="/cart"
-              legacyBehavior>
-                <>
+              legacyBehavior
+            >
+              <>
                 <ChevronDown className="rotate-90" size={16} />
                 <span className="mt-px hidden small:block">
                   Back to shopping cart
@@ -24,7 +25,7 @@ const CheckoutTemplate = () => {
               </>
             </Link>
             <Link className="text-xl-semi" href="/">
-              Natahome
+              Woodstore
             </Link>
             <div className="flex-1 basis-0" />
           </nav>
@@ -38,7 +39,7 @@ const CheckoutTemplate = () => {
         </div>
       </div>
     </CheckoutProvider>
-  );
+  )
 }
 
 export default CheckoutTemplate
